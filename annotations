@@ -1,8 +1,14 @@
-indices                                -> import to find data very fast;
+-> create database;
+create database db_example;
 
-create database db_example;            -> create database;
+-> use database
+use db_example;
 
-use db_example; -> use database
-
-create database db_example             -> Create a database in a specific dir with size, max-size and filegrowth
+-> Create a database in a specific dir with size, max-size and filegrowth
+create database db_example
 on (name=db_example_dat, filename = 'c:\temp\data\db_example', size=10, maxsize=50, filegrowth=5);
+
+-> Create a database in a specific dir with size, max-size and filegrowth and generate log
+create database db_example
+on (name=db_example_dat, filename = 'c:\temp\data\db_example.mdf', size=10, maxsize=50, filegrowth=5)
+log on (name=db_example_dat, filename = 'c:\temp\data\db_example.ldf', size=10, maxsize=50, filegrowth=5)
