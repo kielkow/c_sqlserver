@@ -15,3 +15,22 @@ log on (name=db_example_dat, filename = 'c:\temp\data\db_example.ldf', size=10, 
 
 -> Delete a database
 drop database db_example;
+
+-> Create table
+create table [customers] (
+	[cpf] [varchar] (11), 
+	[name] [varchar] (150), 
+	[address] [varchar] (150),
+	[address detail] [varchar] (150),
+	[street] [varchar] (150),
+	[community] [varchar] (50),
+	[city] [varchar] (50),
+	[state] [varchar] (2),
+	[CEP] [varchar] (8),
+	[dt_born] [date], 
+	[age] [smallint], 
+	[sex] [varchar] (1),
+	[credit limit] [money],
+	[minim vol sucos] [float],
+	[first buy] [bit]
+)
