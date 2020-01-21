@@ -37,3 +37,7 @@ create table [customers] (
 
 -> Delete table
 drop table [tb_example];
+
+-> Execute command sql
+go
+...script
