@@ -34,3 +34,6 @@ create table [customers] (
 	[minim vol sucos] [float],
 	[first buy] [bit]
 )
+
+-> Delete table
+drop table [tb_example];
