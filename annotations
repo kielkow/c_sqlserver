@@ -1,5 +1,8 @@
-indices -> import to find data very fast;
+indices                                -> import to find data very fast;
 
-create database db_example; -> create database;
+create database db_example;            -> create database;
 
 use db_example; -> use database
+
+create database db_example             -> Create a database in a specific dir with size, max-size and filegrowth
+on (name=db_example_dat, filename = 'c:\temp\data\db_example', size=10, maxsize=50, filegrowth=5);
