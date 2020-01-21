@@ -1,1 +1,3 @@
 indices -> import to find data very fast;
+
+create database db_example; -> create database;
