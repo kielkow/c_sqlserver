@@ -41,3 +41,12 @@ drop table [tb_example];
 -> Execute command sql
 go
 ...script
+
+-> insert value on table
+insert into dbo.products
+([cod product], [name product], [embalagem], [size], [taste], [price])
+values 
+('1A4BAG67A0', 'orange juice', 'plastic', '350ml', 'orange', 4.67);
+
+-> select data from table
+select * from dbo.table_example;
