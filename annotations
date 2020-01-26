@@ -70,3 +70,9 @@ varchar(10) not null
 alter table [table]
 add constraint pk_column
 PRIMARY KEY CLUSTERED ([id_column]);
+
+-> insert date and logic values on table
+update [dbo].[providers] set
+[date admission] = '2017-03-18',
+[holiday] = 1
+where [key] = '00238' OR [key] = '00265';
