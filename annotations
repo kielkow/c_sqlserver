@@ -60,3 +60,8 @@ where [id] = 1;
 -> delete data
 delete from table_example
 where id = 1;
+
+-> alter column to not accept null
+alter table [table]
+alter column [cod column] 
+varchar(10) not null
