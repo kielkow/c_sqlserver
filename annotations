@@ -56,3 +56,7 @@ update table_example set
 [column1] = 'newValue1',
 [column2] = 'newValue2'
 where [id] = 1;
+
+-> delete data
+delete from table_example
+where id = 1;
