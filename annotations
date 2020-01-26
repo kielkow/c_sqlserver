@@ -50,3 +50,9 @@ values
 
 -> select data from table
 select * from dbo.table_example;
+
+-> update data
+update table_example set
+[column1] = 'newValue1',
+[column2] = 'newValue2'
+where [id] = 1;
