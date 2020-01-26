@@ -65,3 +65,8 @@ where id = 1;
 alter table [table]
 alter column [cod column] 
 varchar(10) not null
+
+-> Add primary key on table
+alter table [table]
+add constraint pk_column
+PRIMARY KEY CLUSTERED ([id_column]);
