@@ -124,3 +124,11 @@ select * from [dbo].[products] where price >= 5; -> bigger or equal
 select * from [dbo].[products] where price <= 5; -> lower or equal
 
 select * from [dbo].[products] where price <> 5; -> different than 5
+
+-> Filter data by date
+select * from [dbo].[providers] where [date admission] > '2000-01-01';
+select * from [dbo].[providers] where [date admission] >= '2000-01-01';
+select * from [dbo].[providers] where [date admission] = '2000-01-01';
+select * from [dbo].[providers] where [date admission] < '2000-01-01';
+select * from [dbo].[providers] where [date admission] <= '2000-01-01';
+select * from [dbo].[providers] where [date admission] <> '2000-01-01';
