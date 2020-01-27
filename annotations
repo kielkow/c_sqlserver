@@ -76,3 +76,11 @@ update [dbo].[providers] set
 [date admission] = '2017-03-18',
 [holiday] = 1
 where [key] = '00238' OR [key] = '00265';
+
+-> select top 1000 itens from table
+select top(1000) 
+	[name],
+	[payment],
+	[date admission],
+	[holiday]
+FROM [dbo].[providers];
