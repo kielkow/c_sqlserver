@@ -92,3 +92,11 @@ select top(1000)
 	[date admission],
 	[holiday]
 FROM [dbo].[providers];
+
+-> Rename column on select
+select
+	[name] as nome,
+	[payment] as comissao,
+	[date admission] as data_admissao,
+	[holiday] as ferias
+FROM [dbo].[providers];
