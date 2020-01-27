@@ -109,3 +109,7 @@ select
 	[holiday] as ferias
 from [dbo].[providers]
 where [name] = 'Matheus Kielkowski';
+
+-> delete itens from table using where
+delete from [dbo].[providers] 
+where [holiday] = 1;
