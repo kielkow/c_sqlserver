@@ -147,3 +147,8 @@ select * from [table] where not([x] = 'A' OR [y] = 'B');
 select * from [table] where [x] in (1,2,3,4,5);
 select * from [table] where [x] not in (1,2,3,4,5);
 select * from [table] where [x] between 10 and 30;
+
+-> select with LIKE
+select * from [table] where [x] like '%test%'; -> get anywhere
+select * from [table] where [x] like '%test'; -> get in the end
+select * from [table] where [x] like 'test%'; -> get in the start
