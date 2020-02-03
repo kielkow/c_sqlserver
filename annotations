@@ -152,3 +152,7 @@ select * from [table] where [x] between 10 and 30;
 select * from [table] where [x] like '%test%'; -> get anywhere
 select * from [table] where [x] like '%test'; -> get in the end
 select * from [table] where [x] like 'test%'; -> get in the start
+
+-> select with DISTINCT (avoid repetitions items)
+select distinct * from [table];
+select distinct [x], [y] from [table]; -> x and y no repetitions
