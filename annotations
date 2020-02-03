@@ -142,3 +142,8 @@ select * from [dbo].[providers] where day([date admission]) = 10;
 select * from [table] where [x] = 'A' OR [y] = 'B';
 select * from [table] where [x] = 'A' AND [y] = 'B';
 select * from [table] where not([x] = 'A' OR [y] = 'B');
+
+-> select with IN and BETWEEN
+select * from [table] where [x] in (1,2,3,4,5);
+select * from [table] where [x] not in (1,2,3,4,5);
+select * from [table] where [x] between 10 and 30;
