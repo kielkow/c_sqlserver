@@ -157,3 +157,10 @@ select * from [table] where [x] like 'test%'; -> get in the start
 select distinct * from [table];
 select distinct [x], [y] from [table]; -> x and y no repetitions
 select distinct top 3 * from [table]; -> select top 3 distinct
+
+-> order items
+select * from [table] order by campo;
+select * from [table] order by campo asc;
+select * from [table] order by campo desc;
+select * from [table] order by campo1, campo2;
+select * from [table] order by campo1 desc, campo2 desc;
