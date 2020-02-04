@@ -165,10 +165,20 @@ select * from [table] order by campo desc;
 select * from [table] order by campo1, campo2;
 select * from [table] order by campo1 desc, campo2 desc;
 
-
 -> MAX, MIN, SUM, AVG, COUNT
 select SUM(x) from [table];
 select MIN(x) from [table];
 select MAX(x) from [table];
 select AVG(x) from [table];
 select COUNT(x) from [table];
+
+-> GROUP BY
+select * from [table] group by [field];
+select x, SUM(y) from [table] group by x;
+select x, MAX(y) from [table] group by x;
+select x, MIN(y) from [table] group by x;
+select x, AVG(y) from [table] group by x;
+select x, COUNT(y) from [table] group by x;
+select x, SUM(y) from [table] where z = 1 group by x;
+select x, z, SUM(y) from [table] where z = 1 group by x, z;
+select x, SUM(y) from [table] where z = 1 group by x order by x desc;
