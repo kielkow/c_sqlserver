@@ -164,3 +164,11 @@ select * from [table] order by campo asc;
 select * from [table] order by campo desc;
 select * from [table] order by campo1, campo2;
 select * from [table] order by campo1 desc, campo2 desc;
+
+
+-> MAX, MIN, SUM, AVG, COUNT
+select SUM(x) from [table];
+select MIN(x) from [table];
+select MAX(x) from [table];
+select AVG(x) from [table];
+select COUNT(x) from [table];
