@@ -189,3 +189,22 @@ select x, SUM(y) from [table] group by x having SUM(y) >= 6;
 select a, b, SUM(c) as C from [table] 
 where [b] =  'SP' 
 group by a, b having SUM(c) >= 140000;
+
+-> CASE WHEN
+select test, 
+	case 
+		when x >= 8 and y <= 10 then 'Excelent'
+		when x >= 6 and y <= 8 then 'Good'
+		when x >= 5 and y <= 6 then 'OK'
+		else 'bad'
+	end
+from [table];
+select test, 
+	case 
+		when x >= 8 and y <= 10 then 'Excelent'
+		when x >= 6 and y <= 8 then 'Good'
+		when x >= 5 and y <= 6 then 'OK'
+		else 'bad'
+	end,
+	AVG(x+y)
+from [table];
