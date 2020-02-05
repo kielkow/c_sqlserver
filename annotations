@@ -182,3 +182,9 @@ select x, COUNT(y) from [table] group by x;
 select x, SUM(y) from [table] where z = 1 group by x;
 select x, z, SUM(y) from [table] where z = 1 group by x, z;
 select x, SUM(y) from [table] where z = 1 group by x order by x desc;
+
+-> HAVING 
+select x, SUM(y) from [table] group by x having SUM(y) >= 6;
+select a, b, SUM(c) as C from [table] 
+where [b] =  'SP' 
+group by a, b having SUM(c) >= 140000;
