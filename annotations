@@ -182,6 +182,7 @@ select x, COUNT(y) from [table] group by x;
 select x, SUM(y) from [table] where z = 1 group by x;
 select x, z, SUM(y) from [table] where z = 1 group by x, z;
 select x, SUM(y) from [table] where z = 1 group by x order by x desc;
+select YEAR(data) from [table] group by YEAR(data);
 
 -> HAVING 
 select x, SUM(y) from [table] group by x having SUM(y) >= 6;
