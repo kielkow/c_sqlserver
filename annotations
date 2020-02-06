@@ -228,3 +228,8 @@ END;
 select table_x.name, table_x.cod_name from table_x
 inner join table_y 
 on table_x.cod_name = table_y.cod_name;
+
+-> INNER JOIN WITH ALIASES
+select x.name, x.cod_name from table_x as x
+inner join table_y as y
+on x.cod_name = y.cod_name;
