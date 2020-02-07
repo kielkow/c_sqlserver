@@ -233,3 +233,9 @@ on table_x.cod_name = table_y.cod_name;
 select x.name, x.cod_name from table_x as x
 inner join table_y as y
 on x.cod_name = y.cod_name;
+
+-> LEFT JOIN
+select col from table1 left join table2 on table1.col = table2.col;
+select col from table1 left join table2 
+on table1.col = table2.col 
+where table2.col is null;
